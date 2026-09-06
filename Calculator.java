@@ -50,6 +50,10 @@ public class Calculator {
         return true;
     }
 
+    public boolean isOdd(int number) {
+        return number % 2 != 0;
+    }
+
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
@@ -100,5 +104,8 @@ System.out.println("null: " + calculator.isPalindrome(null));
 System.out.println("empty: " + calculator.isPalindrome(""));
 System.out.println("Madam: " + calculator.isPalindrome("Madam"));
 System.out.println("hello world: " + calculator.isPalindrome("hello world"));
+
+System.out.println("5 is odd: " + calculator.isOdd(5));
+System.out.println("6 is odd: " + calculator.isOdd(6));
     }
 }
