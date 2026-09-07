@@ -54,6 +54,10 @@ public class Calculator {
         return number % 2 != 0;
     }
 
+    public boolean isPositive(int number) {
+        return number > 0;
+    }
+
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
@@ -107,5 +111,8 @@ System.out.println("hello world: " + calculator.isPalindrome("hello world"));
 
 System.out.println("5 is odd: " + calculator.isOdd(5));
 System.out.println("6 is odd: " + calculator.isOdd(6));
+
+System.out.println("5 is positive: " + calculator.isPositive(5));
+System.out.println("-5 is positive: " + calculator.isPositive(-5));
     }
 }
