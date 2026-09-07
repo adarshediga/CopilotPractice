@@ -64,6 +64,10 @@ public class Calculator {
         return number > 0;
     }
 
+    public boolean isZero(int number) {
+        return number == 0;
+    }
+
     public boolean isNegative(int number) {
         return number < 0;
     }
@@ -137,5 +141,8 @@ System.out.println("-5 is positive: " + calculator.isPositive(-5));
 
 System.out.println("-5 is negative: " + calculator.isNegative(-5));
 System.out.println("5 is negative: " + calculator.isNegative(5));
+
+System.out.println("0 is zero: " + calculator.isZero(0));
+System.out.println("5 is zero: " + calculator.isZero(5));
     }
 }
