@@ -40,6 +40,13 @@ public class Calculator {
         return sum;
     }
 
+    /**
+     * Determines whether a string is a palindrome after ignoring spaces and case.
+     *
+     * @param s the string to check
+     * @return {@code true} if the string is a palindrome; otherwise, {@code false}
+     * @implNote A {@code null} string returns {@code false}.
+     */
     public boolean isPalindrome(String s) {
         if (s == null) {
             return false;
