@@ -58,6 +58,10 @@ public class Calculator {
         return number > 0;
     }
 
+    public boolean isNegative(int number) {
+        return number < 0;
+    }
+
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
@@ -114,5 +118,8 @@ System.out.println("6 is odd: " + calculator.isOdd(6));
 
 System.out.println("5 is positive: " + calculator.isPositive(5));
 System.out.println("-5 is positive: " + calculator.isPositive(-5));
+
+System.out.println("-5 is negative: " + calculator.isNegative(-5));
+System.out.println("5 is negative: " + calculator.isNegative(5));
     }
 }
