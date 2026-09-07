@@ -7,6 +7,12 @@ public class Calculator {
             );
         }
 
+        if (number > 20) {
+            throw new IllegalArgumentException(
+                "Input must be no greater than 20."
+            );
+        }
+
         if (number == 0 || number == 1) {
             return 1;
         }
@@ -85,6 +91,16 @@ public class Calculator {
         } catch (IllegalArgumentException exception) {
             System.out.println(
                 "Factorial of -2 failed: " + exception.getMessage()
+            );
+        }
+
+        try {
+            System.out.println(
+                "Factorial of 21: " + calculator.calculateFactorial(21)
+            );
+        } catch (IllegalArgumentException exception) {
+            System.out.println(
+                "Factorial of 21 failed: " + exception.getMessage()
             );
         }
 
